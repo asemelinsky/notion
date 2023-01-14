@@ -6,17 +6,22 @@
   new TradingView.widget(
   {
   "autosize": true,
-  "symbol": "FX:EURJPY",
+  "symbol": "FX:EURUSD",
   "interval": "240",
   "timezone": "Europe/Vilnius",
   "theme": "dark",
   "style": "1",
   "locale": "en",
 	"toolbar_bg": "#f1f3f6",
-  "enable_publishing": true,
+  "enable_publishing": false,
   "hide_side_toolbar": false,
   "studies": [
-    "MAExp@tv-basicstudies"
+	{
+        id: "MAExp@tv-basicstudies",
+        inputs: {
+            length: 200
+            }
+	}
   ],
   "container_id": "tradingview_29d8d"
 }
