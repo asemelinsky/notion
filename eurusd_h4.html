@@ -15,8 +15,18 @@
 	"toolbar_bg": "#f1f3f6",
   "enable_publishing": false,
   "hide_side_toolbar": false,
+"hidevolume": true,
+"studies_overrides": {
+        "moving average.ma.color": "#2A2E39",
+        "moving average.ma.linewidth": 2,
+    },
   "studies": [
-    "MAExp@tv-basicstudies"
+	{
+        id: "MAExp@tv-basicstudies",
+        inputs: {
+            length: 14
+            }
+	}
   ],
   "container_id": "tradingview_29d8d"
 }
