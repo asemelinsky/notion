@@ -1,0 +1,36 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_4b895"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "FX:GBPJPY",
+  "interval": "240",
+  "timezone": "Europe/Vilnius",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+	"toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+"hidevolume": true,
+"studies_overrides": {
+        "moving average.ma.color": "#2A2E39",
+        "moving average.ma.linewidth": 2,
+    },
+  "studies": [
+	{
+        id: "MAExp@tv-basicstudies",
+        inputs: {
+            length: 14
+            }
+	}
+  ],
+  "container_id": "tradingview_29d8d"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
